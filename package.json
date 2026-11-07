@@ -1,0 +1,15 @@
+{
+  "name": "hr-admin",
+  "private": true,
+  "version": "1.0.0",
+  "description": "HR admin portal: employee records, contract reminders and department headcount",
+  "workspaces": ["api", "notifier", "web"],
+  "scripts": {
+    "dev:api": "npm run dev -w api",
+    "dev:web": "npm run dev -w web",
+    "dev:notifier": "npm run dev -w notifier",
+    "build": "npm run build -w web",
+    "test": "npm test -w api"
+  },
+  "engines": { "node": ">=20.19" }
+}
